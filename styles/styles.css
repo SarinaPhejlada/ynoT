@@ -1,0 +1,81 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: block;
+    background-color: #1f1f1f;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    display: inline-block;
+    width: 100%;
+    min-height: 10%;
+    background-color: #4000ff;
+    color: white;
+    text-align: center;
+}
+
+.title {
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    font-family: defaultFont;
+    font-size: 35pt;
+    line-height: 100px;
+    transform:scale(.9);
+    box-shadow: 0px 0px 8px 2px #000000;
+}
+
+.left-column {
+    position: fixed;
+    left: 0;
+    top: 100px;
+    background-color: #2f2f2f;
+    height: 100%;
+    width: 20%;
+}
+.right-column {
+    position: fixed;
+    right: 0;
+    top: 100px;
+    background-color: #2f2f2f;
+    height: 100%;
+    width: 20%;
+}
+.main-column {
+    position: fixed;
+    left: 20%;
+    right: 20%;
+    display: block;
+    top: 100px;
+    padding: 40px;
+    border: 1px solid red;
+    height: calc(100% - 182px);
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+    background-image: url("../src/bg_castle.png");
+    background-size: 100% 100%;
+}
+
+@font-face {
+    font-family: defaultFont;
+    src: url("../src/MyriadPro-Bold.otf");
+}
+
+/* Cursor Stuff */
+
+<style type="text/css">
+body, a:hover {
+    cursor: url(http://cur.cursors-4u.net/sports/spo-1/spo15.cur), progress !important;
+}</style>
+<a href="http://www.cursors-4u.com/cursor/2005/05/08/spo15-11.html" target="_blank" title="Sword"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Sword" style="position:absolute; top: 0px; right: 0px;" /></a>
+
+/* Potato */
