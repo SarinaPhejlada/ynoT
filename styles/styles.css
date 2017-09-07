@@ -63,6 +63,8 @@ body {
     width: 100%;
     background-image: url("../src/bg_castle.png");
     background-size: 100% 100%;
+    /* cursor:url("../src/sword.jpg"), auto; */
+    cursor:url("../src/spo15.cur"), auto;
 }
 
 @font-face {
@@ -71,11 +73,5 @@ body {
 }
 
 /* Cursor Stuff */
-
-<style type="text/css">
-body, a:hover {
-    cursor: url(http://cur.cursors-4u.net/sports/spo-1/spo15.cur), progress !important;
-}</style>
-<a href="http://www.cursors-4u.com/cursor/2005/05/08/spo15-11.html" target="_blank" title="Sword"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Sword" style="position:absolute; top: 0px; right: 0px;" /></a>
 
 /* Potato */
