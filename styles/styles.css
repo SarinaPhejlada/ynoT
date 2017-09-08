@@ -56,6 +56,7 @@ body {
     padding: 40px;
     border: 1px solid red;
     height: calc(100% - 182px);
+    cursor:url(../src/cursor.png), auto; /* new cursor sword added to src folder, this code a lot short than what we had */
 }
 
 .map {
@@ -69,13 +70,5 @@ body {
     font-family: defaultFont;
     src: url("../src/MyriadPro-Bold.otf");
 }
-
-/* Cursor Stuff */
-
-<style type="text/css">
-body, a:hover {
-    cursor: url(http://cur.cursors-4u.net/sports/spo-1/spo15.cur), progress !important;
-}</style>
-<a href="http://www.cursors-4u.com/cursor/2005/05/08/spo15-11.html" target="_blank" title="Sword"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Sword" style="position:absolute; top: 0px; right: 0px;" /></a>
 
 /* Potato */
