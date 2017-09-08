@@ -56,7 +56,7 @@ body {
     padding: 40px;
     border: 1px solid red;
     height: calc(100% - 182px);
-    cursor:url(../src/cursor.png), auto; /* new cursor sword added to src folder, this code a lot short than what we had */
+    cursor:url("../src/cursor.png"), auto; /* new cursor sword added to src folder, this code a lot short than what we had */
 }
 .map {
     height: 100%;
@@ -65,14 +65,14 @@ body {
     background-size: 100% 100%;
 }
 .leftbutton{
-    background: url(../src/left.png) no-repeat;
+    background: url("../src/left.png") no-repeat;
     cursor: pointer;
     border: none;
     width: 500px;
     height: 100px;
 }
 .rightbutton{
-    background: url(../src/right.png) no-repeat;
+    background: url("../src/right.png") no-repeat;
     cursor: pointer;
     border: none;
     width: 500px;
