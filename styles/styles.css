@@ -123,29 +123,15 @@ body {
 
 /* Enemy Aesthetics */
 
-.input-kinghenry:not(:checked) ~ ekinghenry,
-.input-knight1:not(:checked) ~ .eknight1,
-.input-knight2:not(:checked) ~ .eknight2,
-.input-knight3:not(:checked) ~ .eknight3,
-.input-knight4:not(:checked) ~ .eknight4,
-.input-knight5:not(:checked) ~ .eknight5,
-.input-knight6:not(:checked) ~ .eknight6,
-.input-knight7:not(:checked) ~ .eknight7, {
-    opacity: 1;
-}
-
-
-.input-knight1:checked + .enemy-label2 span,
-.input-knight2:checked ~ .enemy-label3 span,
-.input-knight3:checked ~ .enemy-label4 span,
-.input-knight4:checked ~ .enemy-label5 span,
-.input-knight5:checked ~ .enemy-label6 span,
-.input-knight6:checked ~ .enemy-label7 span,
-.input-knight7:checked ~ .enemy-label8 span {
-    display: none;
-    opacity: 0;
-    height: 0px;
-    width: 0px;
+.input-kinghenry:checked ~ div label[for="enemy-label1"],
+.input-knight1:checked ~ label[for="enemy-label2"],
+.input-knight2:checked ~ label[for="enemy-label3"],
+.input-knight3:checked ~ label[for="enemy-label4"],
+.input-knight4:checked ~ label[for="enemy-label5"],
+.input-knight5:checked ~ label[for="enemy-label6"],
+.input-knight6:checked ~ label[for="enemy-label7"],
+.input-knight7:checked ~ label[for="enemy-label8"] {
+    visibility: hidden;
 }
 
 label {
@@ -153,7 +139,7 @@ label {
     cursor:url("../src/cursor.png"), auto;
 }
 
-.knight1 {
+.knight1 span {
     background-image: url("../src/knight2.gif");
     background-size: contain;
     /* border: 1px solid red; */
@@ -162,7 +148,7 @@ label {
     position: fixed;
 }
 
-.knight2 {
+.knight2 span{
     background-image: url("../src/knight1.gif");
     background-size: contain;
     /* border: 1px solid red; */
@@ -186,8 +172,14 @@ label {
     left: -20px;
 }
 
+
 .move, .king-henry {
-    animation:boss_move 16s linear infinite;
+    animation:boss_move 8s linear infinite;
+}
+.move {
+    position: fixed;
+    top: 50%;
+    left: 50%;
 }
 
 .eknight1 {
