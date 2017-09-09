@@ -13,16 +13,33 @@
 
     <div class="game-board">
         <div class="left-column">
-            <p>Left</p>
-            <input class = "leftbutton" type = "submit" value = "">
+            <div class="entry-title">Previous</div>
+            <input class="leftbutton" type="submit" value ="">
         </div>
         <div class="right-column">
-            <p>Right</p>
-            <input class = "rightbutton" type = "submit" value = "">
+            <div class="entry-title">Next</div>
+            <input class="rightbutton castle" type="submit" value ="">
         </div>
         <div class="main-column">
-            <div class="map">
+            <div class="map castle">
+                <input class="score-counter input-kinghenry" type="radio" id="enemy-label1">
+                <input class="score-counter input-knight1" type="radio" id="enemy-label2">
+                <input class="score-counter input-knight2" type="radio" id="enemy-label3">
+                <input class="score-counter input-knight3" type="radio" id="enemy-label4">
+                <input class="score-counter input-knight4" type="radio" id="enemy-label5">
+                <input class="score-counter input-knight5" type="radio" id="enemy-label6">
+                <input class="score-counter input-knight6" type="radio" id="enemy-label7">
+                <input class="score-counter input-knight7" type="radio" id="enemy-label8">
                 
+                <div class="move"><label for="enemy-label1" class="king-henry ekinghenry"></label></div>
+                <label for="enemy-label2" class="knight3 eknight1"><span></span></label>
+                <label for="enemy-label3" class="knight1 eknight2"><span></span></label>
+                <label for="enemy-label4" class="knight1 eknight3"><span></span></label>
+                <label for="enemy-label5" class="knight2 eknight4"><span></span></label>
+                <label for="enemy-label6" class="knight2 eknight5"><span></span></label>
+                <label for="enemy-label7" class="knight2 eknight6"><span></span></label>
+                <label for="enemy-label8" class="knight2 eknight7"><span></span></label>
+                <div class="total-score">Points: </div>
             </div>
         </div>
     </div>

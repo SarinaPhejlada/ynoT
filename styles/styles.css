@@ -2,11 +2,13 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    -webkit-touch-callout: none;
 }
 
 body {
     display: block;
     background-color: #1f1f1f;
+    counter-reset: score;
 }
 
 .header {
@@ -78,9 +80,207 @@ body {
     width: 500px;
     height: 100px;
 }
+
+.entry-title {
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 20pt;
+    font-family: defaultFont;
+}
 @font-face {
     font-family: defaultFont;
     src: url("../src/MyriadPro-Bold.otf");
 }
 
-/* Potato */
+/* Scoring System */
+
+.total-score {
+    color: white;
+    font-family: defaultFont;
+    letter-spacing: 1px;
+    text-align: center;
+    position: fixed;
+    top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.total-score:after {
+    content: counter(score);
+}
+
+.score-counter:checked {
+    counter-increment:score;
+}
+
+.king-henry {
+    background-image: url("../src/kinghenry.png");
+    background-size: contain;
+    height: 150px;
+    width: 100px;
+}
+
+/* Enemy Aesthetics */
+
+.input-kinghenry:not(:checked) ~ ekinghenry,
+.input-knight1:not(:checked) ~ .eknight1,
+.input-knight2:not(:checked) ~ .eknight2,
+.input-knight3:not(:checked) ~ .eknight3,
+.input-knight4:not(:checked) ~ .eknight4,
+.input-knight5:not(:checked) ~ .eknight5,
+.input-knight6:not(:checked) ~ .eknight6,
+.input-knight7:not(:checked) ~ .eknight7, {
+    opacity: 1;
+}
+
+
+.input-knight1:checked + .enemy-label2 span,
+.input-knight2:checked ~ .enemy-label3 span,
+.input-knight3:checked ~ .enemy-label4 span,
+.input-knight4:checked ~ .enemy-label5 span,
+.input-knight5:checked ~ .enemy-label6 span,
+.input-knight6:checked ~ .enemy-label7 span,
+.input-knight7:checked ~ .enemy-label8 span {
+    display: none;
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+}
+
+label {
+    position: absolute;
+    cursor:url("../src/cursor.png"), auto;
+}
+
+.knight1 {
+    background-image: url("../src/knight2.gif");
+    background-size: contain;
+    /* border: 1px solid red; */
+    height: 75px;
+    width: 75px;
+    position: fixed;
+}
+
+.knight2 {
+    background-image: url("../src/knight1.gif");
+    background-size: contain;
+    /* border: 1px solid red; */
+    height: 75px;
+    width: 75px;
+    position: fixed;
+}
+
+.knight3 {
+    background-image: url("../src/knight3.gif");
+    background-size: contain;
+    /* border: 1px solid red; */
+    height: 75px;
+    width: 75px;
+    position: fixed;
+}
+
+.score-counter {
+    position: fixed;
+    top: -20px;
+    left: -20px;
+}
+
+.move, .king-henry {
+    animation:boss_move 16s linear infinite;
+}
+
+.eknight1 {
+    position: fixed;
+    top: 250px;
+    left: 60%;
+    animation:slide4 6s linear infinite;
+}
+
+.eknight2 {
+    position: fixed;
+    top: 275px;
+    left: 61%;
+    animation:slide1 6s linear infinite;
+}
+
+.eknight3 {
+    position: fixed;
+    top: 275px;
+    left: 29%;
+    animation:slide1 6s linear infinite;
+}
+
+.eknight4 {
+    position: fixed;
+    top: 80%;
+    left: 40%;
+    animation:slide2 4s linear infinite;
+}
+
+.eknight5 {
+    position: fixed;
+    top: 30%;
+    left: 70%;
+    animation:slide1 4s linear infinite;
+}
+
+.eknight6 {
+    position: fixed;
+    top: 250px;
+    left: 40%;
+    animation:slide2 4s linear infinite;
+}
+
+.eknight7 {
+    position: fixed;
+    top: 500px;
+    left: 40%;
+    animation:slide3 4s linear infinite;
+}
+
+@keyframes slide1 {
+    50% {
+        -webkit-transform: translate(0,10em);
+        -moz-transform: translate(0,10em);
+        -o-transform: translate(0,10em);
+        -ms-transform: translate(0,10em);
+        transform: translate(0,10em);
+    }
+}
+
+@keyframes slide2 {
+    50% {
+        -webkit-transform: translate(10em,0);
+        -moz-transform: translate(10em,0);
+        -o-transform: translate(10em,0);
+        -ms-transform: translate(10em,0);
+        transform: translate(10em,0);
+    }
+}
+
+@keyframes slide3 {
+    50% {
+        -webkit-transform: translate(10em,10em);
+        -moz-transform: translate(10em,10em);
+        -o-transform: translate(10em,10em);
+        -ms-transform: translate(10em,10em);
+        transform: translate(10em,10em);
+    }
+}
+
+@keyframes slide4 {
+    50% {
+        -webkit-transform: translate(-40em,40em);
+        -moz-transform: translate(-40em,40em);
+        -o-transform: translate(-40em,40em);
+        -ms-transform: translate(-40em,40em);
+        transform: translate(-40em,40em);
+    }
+}
+
+@keyframes boss_move {
+    50%{
+      transform:rotateZ(-360deg);
+    }
+}
