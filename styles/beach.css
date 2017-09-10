@@ -58,23 +58,23 @@ body {
     padding: 40px;
     border: 1px solid red;
     height: calc(100% - 182px);
-    cursor:url("trident.png"), auto;
+    cursor:url("../src/trident.png"), auto;
 }
 .map {
     height: 100%;
     width: 100%;
-    background-image: url("bg_beach.png");
+    background-image: url("../src/bg_beach.png");
     background-size: 100% 100%;
 }
 .leftbutton{
-    background: url("conch-left.png") no-repeat;
+    background: url("../src/conch-left.png") no-repeat;
     cursor: pointer;
     border: none;
     width: 500px;
     height: 100px;
 }
 .rightbutton{
-    background: url("conch-right.png") no-repeat;
+    background: url("../src/conch-right.png") no-repeat;
     cursor: pointer;
     border: none;
     width: 500px;
@@ -115,7 +115,7 @@ body {
 }
 
 .narwhal {
-    background-image: url("narwhal.gif");
+    background-image: url("../src/narwhal.gif");
     background-size: contain;
     height: 150px;
     width: 220px;
@@ -136,11 +136,11 @@ body {
 
 label {
     position: absolute;
-    cursor:url("trident.png"), auto;
+    cursor:url("../src/trident.png"), auto;
 }
 
 .crab span {
-    background-image: url("crab.gif");
+    background-image: url("../src/crab.gif");
     background-size: contain;
     /* border: 1px solid red; */
     height: 50px;
@@ -149,7 +149,7 @@ label {
 }
 
 .turtle span{
-    background-image: url("turtle.gif");
+    background-image: url("../src/turtle.gif");
     background-size: contain;
     /* border: 1px solid red; */
     height: 50px;
@@ -158,7 +158,7 @@ label {
 }
 
 .seahorse {
-    background-image: url("seahorse.gif");
+    background-image: url("../src/seahorse.gif");
     background-size: contain;
     /* border: 1px solid red; */
     height: 70px;
@@ -167,7 +167,7 @@ label {
 }
 
 .seahorse2 {
-    background-image: url("seahorse2.gif");
+    background-image: url("../src/seahorse2.gif");
     background-size: contain;
     /* border: 1px solid red; */
     height: 70px;
@@ -176,7 +176,7 @@ label {
 }
 
 .seagull {
-    background-image: url("seagull.gif");
+    background-image: url("../src/seagull.gif");
     background-size: contain;
     /* border: 1px solid red; */
     height: 50px;
@@ -185,7 +185,7 @@ label {
 }
 
 .octopus {
-    background-image: url("octopus.gif");
+    background-image: url("../src/octopus.gif");
     background-size: contain;
     /* border: 1px solid red; */
     height: 60px;
@@ -194,7 +194,7 @@ label {
 }
 
 .jellyfish {
-    background-image: url("jellyfish.gif");
+    background-image: url("../src/jellyfish.gif");
     background-size: contain;
     /* border: 1px solid red; */
     height: 70px;
