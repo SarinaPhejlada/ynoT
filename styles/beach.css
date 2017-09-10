@@ -90,7 +90,7 @@ body {
 }
 @font-face {
     font-family: defaultFont;
-    src: url("MyriadPro-Bold.otf");
+    src: url("../src/MyriadPro-Bold.otf");
 }
 
 /* Scoring System */
