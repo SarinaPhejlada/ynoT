@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* Space Theme Colors */
 body {
     background-color: #1f1f1f;
@@ -26,134 +25,6 @@ body {
     background: url("../src/spaceship_right.png") no-repeat;
 }
 /* Enemy Functionality */
-=======
-
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    -webkit-touch-callout: none;
-}
-
-body {
-    display: block;
-    background-color: #1f1f1f;
-    counter-reset: score;
-}
-
-.header {
-    position: fixed;
-    top: 0;
-    display: inline-block;
-    width: 100%;
-    min-height: 10%;
-    background-color: darkgray;
-    color: white;
-    text-align: center;
-}
-
-.title {
-    height: 100px;
-    display: block;
-    margin: 0 auto;
-    font-family: defaultFont;
-    font-size: 35pt;
-    line-height: 100px;
-    transform:scale(.9);
-    box-shadow: 0px 0px 8px 2px #000000;
-}
-
-.left-column {
-    position: fixed;
-    left: 0;
-    top: 100px;
-    background-color: black;
-    height: 100%;
-    width: 20%;
-}
-.right-column {
-    position: fixed;
-    right: 0;
-    top: 100px;
-    background-color: black;
-    height: 100%;
-    width: 20%;
-}
-.main-column {
-    position: fixed;
-    left: 20%;
-    right: 20%;
-    display: block;
-    top: 100px;
-    padding: 40px;
-    border: 1px solid red;
-    height: calc(100% - 182px);
-    cursor:url("../src/lightsaber.png"), auto; /* new cursor sword added to src folder, this code a lot short than what we had */
-}
-.map {
-    height: 100%;
-    width: 100%;
-    background-image: url("../src/bg_space.jpg");
-    background-size: 100% 100%;
-}
-.leftbutton{
-    background: url("../src/spaceship_left.png") no-repeat;
-    cursor: pointer;
-    border: none;
-    width: 500px;
-    height: 100px;
-}
-.rightbutton{
-    background: url("../src/spaceship_right.png") no-repeat;
-    cursor: pointer;
-    border: none;
-    width: 500px;
-    height: 100px;
-}
-
-.entry-title {
-    color: white;
-    text-align: center;
-    width: 100%;
-    font-size: 20pt;
-    font-family: defaultFont;
-}
-@font-face {
-    font-family: defaultFont;
-    src: url("../src/MyriadPro-Bold.otf");
-}
-
-/* Scoring System */
-
-.total-score {
-    color: white;
-    font-family: defaultFont;
-    letter-spacing: 1px;
-    text-align: center;
-    position: fixed;
-    top: 120px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.total-score:after {
-    content: counter(score);
-}
-
-.score-counter:checked {
-    counter-increment:score;
-}
-
-.gir {
-    background-image: url("../src/gir.gif");
-    background-size: contain;
-    height: 150px;
-    width: 100px;
-}
-
-/* Enemy Aesthetics */
-
->>>>>>> origin/master
 .input-gir:checked ~ div label[for="enemy-label1"],
 .input-alien1:checked ~ label[for="enemy-label2"],
 .input-alien2:checked ~ label[for="enemy-label3"],
@@ -164,7 +35,6 @@ body {
 .input-alien7:checked ~ label[for="enemy-label8"] {
     visibility: hidden;
 }
-<<<<<<< HEAD
 /* Enemy Aesthetics */
 .gir {
     background-image: url("../src/gir.gif");
@@ -172,28 +42,16 @@ body {
     height: 150px;
     width: 100px;
 }
-=======
-
->>>>>>> origin/master
 label {
     position: absolute;
     cursor:url("../src/lightsaber.png"), auto;
 }
-<<<<<<< HEAD
 .alien1 span, .alien2 span, .alien3 {
     background-size: contain;
-=======
-
-.alien1 span {
-    background-image: url("../src/alien1.gif");
-    background-size: contain;
-    /* border: 1px solid red; */
->>>>>>> origin/master
     height: 60px;
     width: 75px;
     position: fixed;
 }
-<<<<<<< HEAD
 .alien1 span {
     background-image: url("../src/alien1.gif");    
 }
@@ -208,34 +66,6 @@ label {
     width: 75px;
 }
 /* Enemy Animation */
-=======
-
-.alien2 span{
-    background-image: url("../src/alien2.gif");
-    background-size: contain;
-    /* border: 1px solid red; */
-    height: 37px;
-    width: 60px;
-    position: fixed;
-}
-
-.alien3 {
-    background-image: url("../src/alien3.gif");
-    background-size: contain;
-    /* border: 1px solid red; */
-    height: 50px;
-    width: 75px;
-    position: fixed;
-}
-
-.score-counter {
-    position: fixed;
-    top: -20px;
-    left: -20px;
-}
-
-
->>>>>>> origin/master
 .move, .egir {
     animation:boss_move 8s linear infinite;
 }
@@ -244,80 +74,48 @@ label {
     top: 50%;
     left: 50%;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 .ealien1 {
     position: fixed;
     top: 250px;
     left: 60%;
     animation:slide4 6s linear infinite;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 .ealien2 {
     position: fixed;
     top: 275px;
     left: 61%;
     animation:slide1 6s linear infinite;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 .ealien3 {
     position: fixed;
     top: 275px;
     left: 29%;
     animation:slide1 6s linear infinite;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 .ealien4 {
     position: fixed;
     top: 80%;
     left: 40%;
     animation:slide2 4s linear infinite;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 .ealien5 {
     position: fixed;
     top: 30%;
     left: 70%;
     animation:slide1 4s linear infinite;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 .ealien6 {
     position: fixed;
     top: 250px;
     left: 40%;
     animation:slide2 4s linear infinite;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 .ealien7 {
     position: fixed;
     top: 500px;
     left: 40%;
     animation:slide3 4s linear infinite;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 @keyframes slide1 {
     50% {
         -webkit-transform: translate(0,10em);
@@ -337,10 +135,6 @@ label {
         transform: translate(10em,0);
     }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 @keyframes slide3 {
     50% {
         -webkit-transform: translate(10em,10em);
@@ -350,10 +144,6 @@ label {
         transform: translate(10em,10em);
     }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 @keyframes slide4 {
     50% {
         -webkit-transform: translate(-40em,40em);
@@ -363,16 +153,8 @@ label {
         transform: translate(-40em,40em);
     }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 @keyframes boss_move {
     50%{
       transform:rotateZ(-360deg);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> origin/master

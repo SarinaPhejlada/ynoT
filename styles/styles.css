@@ -64,28 +64,12 @@ body {
     width: 100%;
     background-size: 100% 100%;
 }
-<<<<<<< HEAD
 .leftbutton, .rightbutton {
-=======
-.leftbutton{
-    background: url("../src/left.png") no-repeat;
->>>>>>> origin/master
     cursor: pointer;
     border: none;
     width: 500px;
     height: 100px;
 }
-<<<<<<< HEAD
-=======
-.rightbutton{
-    background: url("../src/right.png") no-repeat;
-    cursor: pointer;
-    border: none;
-    width: 500px;
-    height: 100px;
-}
-
->>>>>>> origin/master
 .entry-title {
     color: white;
     text-align: center;
@@ -110,7 +94,6 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-<<<<<<< HEAD
 
 .total-score:after {
     content: counter(score);
@@ -126,134 +109,6 @@ body {
     left: -20px;
 }
 
-=======
-
-.total-score:after {
-    content: counter(score);
-}
-
-.score-counter:checked {
-    counter-increment:score;
-}
-
-.king-henry {
-    background-image: url("../src/kinghenry.png");
-    background-size: contain;
-    height: 150px;
-    width: 100px;
-}
-
-/* Enemy Aesthetics */
-
-.input-kinghenry:checked ~ div label[for="enemy-label1"],
-.input-knight1:checked ~ label[for="enemy-label2"],
-.input-knight2:checked ~ label[for="enemy-label3"],
-.input-knight3:checked ~ label[for="enemy-label4"],
-.input-knight4:checked ~ label[for="enemy-label5"],
-.input-knight5:checked ~ label[for="enemy-label6"],
-.input-knight6:checked ~ label[for="enemy-label7"],
-.input-knight7:checked ~ label[for="enemy-label8"] {
-    visibility: hidden;
-}
-
-label {
-    position: absolute;
-    cursor:url("../src/cursor.png"), auto;
-}
-
-.knight1 span {
-    background-image: url("../src/knight2.gif");
-    background-size: contain;
-    /* border: 1px solid red; */
-    height: 75px;
-    width: 75px;
-    position: fixed;
-}
-
-.knight2 span{
-    background-image: url("../src/knight1.gif");
-    background-size: contain;
-    /* border: 1px solid red; */
-    height: 75px;
-    width: 75px;
-    position: fixed;
-}
-
-.knight3 {
-    background-image: url("../src/knight3.gif");
-    background-size: contain;
-    /* border: 1px solid red; */
-    height: 75px;
-    width: 75px;
-    position: fixed;
-}
-
-.score-counter {
-    position: fixed;
-    top: -20px;
-    left: -20px;
-}
-
-
-.move, .king-henry {
-    animation:boss_move 8s linear infinite;
-}
-.move {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-}
-
-.eknight1 {
-    position: fixed;
-    top: 250px;
-    left: 60%;
-    animation:slide4 6s linear infinite;
-}
-
-.eknight2 {
-    position: fixed;
-    top: 275px;
-    left: 61%;
-    animation:slide1 6s linear infinite;
-}
-
-.eknight3 {
-    position: fixed;
-    top: 275px;
-    left: 29%;
-    animation:slide1 6s linear infinite;
-}
-
-.eknight4 {
-    position: fixed;
-    top: 80%;
-    left: 40%;
-    animation:slide2 4s linear infinite;
-}
-
-.eknight5 {
-    position: fixed;
-    top: 30%;
-    left: 70%;
-    animation:slide1 4s linear infinite;
-}
-
-.eknight6 {
-    position: fixed;
-    top: 250px;
-    left: 40%;
-    animation:slide2 4s linear infinite;
-}
-
-.eknight7 {
-    position: fixed;
-    top: 500px;
-    left: 40%;
-    animation:slide3 4s linear infinite;
-}
-
->>>>>>> origin/master
 @keyframes slide1 {
     50% {
         -webkit-transform: translate(0,10em);
