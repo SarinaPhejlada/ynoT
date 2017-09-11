@@ -2,11 +2,13 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    -webkit-touch-callout: none;
 }
 
 body {
     display: block;
     background-color: #1f1f1f;
+    counter-reset: score;
 }
 
 .header {
@@ -54,24 +56,101 @@ body {
     display: block;
     top: 100px;
     padding: 40px;
-    border: 1px solid red;
     height: calc(100% - 182px);
+    cursor:url("../src/cursor.png"), auto; /* new cursor sword added to src folder, this code a lot short than what we had */
 }
-
 .map {
     height: 100%;
     width: 100%;
-    background-image: url("../src/bg_castle.png");
     background-size: 100% 100%;
-    /* cursor:url("../src/sword.jpg"), auto; */
-    cursor:url("../src/spo15.cur"), auto;
 }
-
+.leftbutton, .rightbutton {
+    cursor: pointer;
+    border: none;
+    width: 500px;
+    height: 100px;
+}
+.entry-title {
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 20pt;
+    font-family: defaultFont;
+}
 @font-face {
     font-family: defaultFont;
     src: url("../src/MyriadPro-Bold.otf");
 }
 
-/* Cursor Stuff */
+/* Scoring System */
 
-/* Potato */
+.total-score {
+    color: white;
+    font-family: defaultFont;
+    letter-spacing: 1px;
+    text-align: center;
+    position: fixed;
+    top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.total-score:after {
+    content: counter(score);
+}
+
+.score-counter:checked {
+    counter-increment:score;
+}
+
+.score-counter {
+    position: fixed;
+    top: -20px;
+    left: -20px;
+}
+
+@keyframes slide1 {
+    50% {
+        -webkit-transform: translate(0,10em);
+        -moz-transform: translate(0,10em);
+        -o-transform: translate(0,10em);
+        -ms-transform: translate(0,10em);
+        transform: translate(0,10em);
+    }
+}
+
+@keyframes slide2 {
+    50% {
+        -webkit-transform: translate(10em,0);
+        -moz-transform: translate(10em,0);
+        -o-transform: translate(10em,0);
+        -ms-transform: translate(10em,0);
+        transform: translate(10em,0);
+    }
+}
+
+@keyframes slide3 {
+    50% {
+        -webkit-transform: translate(10em,10em);
+        -moz-transform: translate(10em,10em);
+        -o-transform: translate(10em,10em);
+        -ms-transform: translate(10em,10em);
+        transform: translate(10em,10em);
+    }
+}
+
+@keyframes slide4 {
+    50% {
+        -webkit-transform: translate(-40em,40em);
+        -moz-transform: translate(-40em,40em);
+        -o-transform: translate(-40em,40em);
+        -ms-transform: translate(-40em,40em);
+        transform: translate(-40em,40em);
+    }
+}
+
+@keyframes boss_move {
+    50%{
+      transform:rotateZ(-360deg);
+    }
+}
