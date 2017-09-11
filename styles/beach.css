@@ -7,7 +7,7 @@ html, body {
 
 body {
     display: block;
-    background-color: #1f1f1f;
+    background-color: #545151;
     counter-reset: score;
 }
 
@@ -17,8 +17,8 @@ body {
     display: inline-block;
     width: 100%;
     min-height: 10%;
-    background-color: #4000ff;
-    color: white;
+    background-color: #e5cc8e;
+    color: #545151;
     text-align: center;
 }
 
@@ -37,7 +37,7 @@ body {
     position: fixed;
     left: 0;
     top: 100px;
-    background-color: #2f2f2f;
+    background-color: #45b7cf;
     height: 100%;
     width: 20%;
 }
@@ -45,7 +45,7 @@ body {
     position: fixed;
     right: 0;
     top: 100px;
-    background-color: #2f2f2f;
+    background-color: #45b7cf;
     height: 100%;
     width: 20%;
 }
