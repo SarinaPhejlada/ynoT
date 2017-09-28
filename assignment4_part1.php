@@ -30,11 +30,11 @@ and open the template in the editor.
             <input type="submit" value="submit" name="sumbit">
         </form>    
         <?php
-            $color = $_Post['text_color'];
-            $fontf = $_Post['font_family'];
-            $tstyle = $_Post['text_style'];
-            $text = $_Post['input_text'];
-            echo '<p style= color: '. $color . '; font-family: '. $fontf . '; ' . $tstyle . '>'. $text . '</p>';
+            $color = $_POST['text_color'];
+            $fontf = $_POST['font_family'];
+            $tstyle = $_POST['text_style'];
+            $text = $_POST['input_text'];
+            echo "<p style=\"color: ". $color ."; font-family: ". $fontf . ";". $tstyle . "\">". $text . "</p>";
         ?>
     </body>
 </html>
